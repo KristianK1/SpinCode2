@@ -1,0 +1,13 @@
+Ja sam {{name}}.
+
+<button [disabled]="ButtonDisabled" (click)="buttonClick()" >Tipka</button>
+
+<input type="text" [(ngModel)] = "inputtext">
+
+<button *ngIf="ButtonDisabled">Button</button>
+
+<button *ngFor="let broj of polje">{{broj.name}}</button>
+
+{{inputtext}}
+
+<app-jela (click)="clicknakomponentu()" (event)="eventIzKomponente($event)" [jelo] = "varijabla"></app-jela>
